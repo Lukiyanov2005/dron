@@ -34,6 +34,9 @@ namespace calculator
                 case 2:
                     Console.WriteLine($"Результат: {a - b}");
                     break;
+                case 3:
+                    Console.WriteLine($"Результат: {a * b}");
+                    break;
                 default:
                     Console.WriteLine("Операция пока не реализована");
                     break;
