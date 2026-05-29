@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 
+
 namespace calculator
 {
     class Program
@@ -36,6 +37,12 @@ namespace calculator
                     break;
                 case 3:
                     Console.WriteLine($"Результат: {a * b}");
+                    break;
+                case 4:
+                    if (b != 0)
+                        Console.WriteLine($"Результат: {a / b}");
+                    else
+                        Console.WriteLine("Ошибка: деление на ноль");
                     break;
                 default:
                     Console.WriteLine("Операция пока не реализована");
