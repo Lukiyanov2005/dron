@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace calculator
 {
     class Program
@@ -25,7 +26,15 @@ namespace calculator
             Console.Write("Введите второе число: ");
             double b = double.Parse(Console.ReadLine());
 
- 
+            switch (choice)
+            {
+                case 1:
+                    Console.WriteLine($"Результат: {a + b}");
+                    break;
+                default:
+                    Console.WriteLine("Операция пока не реализована");
+                    break;
+            }
         }
     }
 }
