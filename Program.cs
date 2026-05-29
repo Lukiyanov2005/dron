@@ -45,9 +45,12 @@ namespace calculator
                         Console.WriteLine("Ошибка: деление на ноль");
                     break;
                 default:
-                    Console.WriteLine("Операция пока не реализована");
+                    Console.WriteLine("Неверный выбор операции");
                     break;
             }
+
+            Console.WriteLine("\nНажмите любую клавишу для выхода...");
+            Console.ReadKey();
         }
     }
 }
